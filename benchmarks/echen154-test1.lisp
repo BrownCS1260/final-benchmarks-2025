@@ -16,4 +16,4 @@
 
 (define (f-calls n) (sum-list (map-arith (create-list n))))
 
-(print (f-calls 15))
+(print (f-calls 30))
