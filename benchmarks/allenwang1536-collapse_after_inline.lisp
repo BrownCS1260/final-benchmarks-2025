@@ -1,0 +1,15 @@
+(define (c1)
+  1)
+
+(define (c2)
+  2)
+
+(define (sum-const)
+  (+ (c1) (c2)))
+
+(define (loop n acc)
+  (if (= n 0)
+      acc
+      (loop (sub1 n) (+ acc (sum-const)))))
+
+(print (loop 50000 0))
