@@ -3,4 +3,4 @@
     acc
     (sum (sub1 n) (+ acc n))))
 
-(print (sum 1000000 0))
+(print (sum 10 0))
