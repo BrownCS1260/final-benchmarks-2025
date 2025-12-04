@@ -1,0 +1,6 @@
+(define (f x y) (if (= x 0) y (f (sub1 x) (add1 y))))
+(let ((x 2))
+  (let ((y 1))
+    (print (f y x))
+  )
+)
