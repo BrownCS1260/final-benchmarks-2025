@@ -1,4 +1,4 @@
-(define (quadruple-square n)
-    (+ (* n n) (+ (* n n) (+ (* n n) (* n n))))
+(define (quadruple-double n)
+    (+ (+ n n) (+ (+ n n) (+ (+ n n) (+ n n))))
 )
-(print (quadruple-square 5))
+(print (quadruple-double 5))

@@ -1,7 +1,7 @@
-(define (square n)
- (* n n)
+(define (double n)
+ (+ n n)
 )
 
-(define (add-sqaures x y) (+ (square x) (square y)))
+(define (add-doubles x y) (+ (double x) (double y)))
 
-(print (add-squares 5 6))
+(print (add-doubles 5 6))
