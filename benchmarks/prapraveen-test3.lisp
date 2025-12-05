@@ -1,0 +1,45 @@
+(define (rmfirst lst elt) 
+    (if (empty? lst) 
+        () 
+        (if (= (left lst) elt) 
+            (right lst)
+            (pair (left lst) (rmfirst (right lst) elt)))
+    )
+)
+
+(define (min lst cur) 
+    (if (empty? lst)
+        cur
+        (if (< (left lst) cur)
+            (min (right lst) (left lst))
+            (min (right lst) cur)
+        )
+    )
+)
+
+(define (sort lst)
+    (if (empty? lst)
+        ()
+        (pair (min lst 99999999) (sort (rmfirst lst (min lst 99999999))))
+    )
+)
+
+(define (printlst lst)
+    (if (empty? lst)
+        true
+        (do
+            (print (left lst))
+            (newline)
+            (printlst (right lst))
+        )
+    )
+)
+
+(define (range n)
+    (if (< n 0)
+        ()
+        (pair n (range (sub1 n)))
+    )
+)
+
+(printlst (sort (range 15)))
