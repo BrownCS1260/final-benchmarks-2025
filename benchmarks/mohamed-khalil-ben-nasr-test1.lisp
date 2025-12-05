@@ -1,0 +1,11 @@
+(define (f a b c d e)
+  (if (= c (+ a b))
+      (+ d e)
+      0))
+
+(let ((a 1))
+  (let ((b 2))
+    (let ((c 3))
+      (let ((d 4))
+        (let ((e 5))
+          (print (f a b c d e)))))))
