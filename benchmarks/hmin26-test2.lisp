@@ -1,0 +1,11 @@
+(define (c1)
+  1)
+(define (c2)
+  2)
+(define (sum-const)
+  (+ (c1) (c2)))
+(define (use-sum n)
+  (if (= n 0)
+      0
+      (+ (sum-const) (use-sum (sub1 n)))))
+(print (use-sum 5))
