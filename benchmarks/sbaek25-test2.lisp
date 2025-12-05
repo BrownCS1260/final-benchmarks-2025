@@ -25,12 +25,13 @@
       (inc
         (double
           (inc
-            (double x))))))
+            (double x)))))
     (inc
       (triple
         (double
           (inc
             (triple
               (inc x)))))))
+)
 
 (print (big 2))
