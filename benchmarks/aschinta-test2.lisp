@@ -3,4 +3,4 @@
   (if (= n 0)
        0
        (+ (sq n) (sumsq (- n 1)))))
-(print (sum-sq 20))
+(print (sumsq 20))
