@@ -1,0 +1,30 @@
+(define (multiply x y)
+  (if (= y 0)
+      0
+      (+ x (multiply x (sub1 y)))))
+
+(define (phantom-cascade x y z w)
+  (let ((sum1 (+ (multiply x y) (multiply z w))))
+    (let ((sum2 (+ (multiply w z) (multiply y x))))
+      (let ((bundle (pair sum1 sum2)))
+        (left (pair (left bundle) (right bundle)))))))
+
+(define (unused-fanout x)
+  (let ((stage1 (pair x (+ x x))))
+    (let ((stage2 (pair (left stage1) (right stage1))))
+      (right stage2))))
+
+(let ((a 2))
+  (let ((b 3))
+    (let ((c 5))
+      (let ((d 7))
+        (let ((first (phantom-cascade a b c d)))
+          (let ((dust (phantom-cascade b c d a)))
+            (let ((noise (unused-fanout (+ d c))))
+              (let ((stack (+ first dust)))
+                (let ((garbage (pair (pair stack dust) (pair dust stack))))
+                  (print (+ (left (right garbage))
+                            (+ (right (left garbage))
+                               (left (left garbage))))))))))))))
+
+
