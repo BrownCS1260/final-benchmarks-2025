@@ -3,4 +3,4 @@
         acc
         (muladd f1 (sub1 f2) (+ acc f1))))
 
-(print (- (+ (muladd 3 1234567890 0) (muladd 3 1234567890 0)) 1))
+(print (- (+ (muladd 3 123456 0) (muladd 3 123456 0)) 1))
