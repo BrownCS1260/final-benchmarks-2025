@@ -1,1 +1,1 @@
-(let ((v (vector 3 5))) (do (vector-set v 1 20) (print (vector-get v 1))))
+(do (define (countdown n) (if (< n 1) 0 (countdown (- n 1)))) (print (countdown 5)))
