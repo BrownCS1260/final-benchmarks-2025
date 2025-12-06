@@ -1,0 +1,7 @@
+(define (f a b) (- a b))
+(define (g a b) (f a b))
+(define (h a b) (g a b))
+(define (i a b) (h a b))
+(define (j a b) (i a b))
+(define (k b a) (j b a))
+(print (k 10000 100))
