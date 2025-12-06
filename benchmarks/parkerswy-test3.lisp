@@ -3,6 +3,6 @@
       (+ x 10)
       (- y 5)))
 
-(let ((u 2)
-      (v 8))
-  (print (choose u v)))
+(let ((u 2))
+  (let ((v 8))
+    (print (choose u v))))
