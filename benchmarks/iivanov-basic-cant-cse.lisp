@@ -1,0 +1,1 @@
+(print (pair (read-num) (read-num)))
