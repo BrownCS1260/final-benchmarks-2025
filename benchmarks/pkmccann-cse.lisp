@@ -1,0 +1,11 @@
+(define (max lst) 
+    (if (empty? (right lst))
+        (left lst)
+        (if (< (max (right lst)) (left lst))
+            (left lst)
+            (max (right lst))
+        )
+    )
+)
+
+(print (max (pair 100 (pair 5000 (pair -2 (pair 6 (pair 68 (pair 2 (pair 1 ())))))))))

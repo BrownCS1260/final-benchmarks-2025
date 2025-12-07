@@ -1,0 +1,3 @@
+(pair 5 (pair 4 (pair 3 (pair 2 (pair 1 ())))))
+(pair 10 (pair 9 (pair 8 (pair 7 (pair 6 (pair 5 (pair 4 (pair 3 (pair 2 (pair 1 ()))))))))))
+(pair 20 (pair 19 (pair 18 (pair 17 (pair 16 (pair 15 (pair 14 (pair 13 (pair 12 (pair 11 (pair 10 (pair 9 (pair 8 (pair 7 (pair 6 (pair 5 (pair 4 (pair 3 (pair 2 (pair 1 ()))))))))))))))))))))
